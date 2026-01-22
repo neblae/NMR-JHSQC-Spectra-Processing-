@@ -7,6 +7,8 @@ by shooting strong magnetic fields through a sample, aligning all nuclei in a mo
   There are multiple types of NMR: the most common being 1H NMR, meaning that the relaxation of Hydrogen atom nuclei is being measured and turned into an FID. For this experiment (JHSQC) we are using 13C NMR. Reason being, 13C is a rare isotope of carbon (the normal carbon being 12C) and it is important as 13C is radioactive. Since our experiment is designed to examine how carbon metabolites (the molecules that turn into energy in your body, namely sugars), 13C is very useful as it can be used to mark specific carbons that get broken down into other derivatives. 
   <img width="1122" height="709" alt="image" src="https://github.com/user-attachments/assets/dee2b23f-d701-423e-a789-01a845dba559" />
   This is an example of an FID from one of my own experiments. It is what is turned into a normal spectra with peaks, which can be read and deciphered to determine what metabolite is present at that given moment. It also gives insight into how much of the metabolite is present in the sample. 
+<img width="1116" height="739" alt="image" src="https://github.com/user-attachments/assets/59f0a8c8-9662-4f58-9cf5-a78732cf5c9f" />
+  (this is what is looks like post processing)
 
 The challenge for writing the script is mostly in being able to replicate the signal processing that is usually done automatically by TopSpin, the NMR processing software. I'm sure there is documentation on how much of the processing is done, but what is difficult is how our protocol is very specifically tailored for our type of experiment. Here's why:
 
