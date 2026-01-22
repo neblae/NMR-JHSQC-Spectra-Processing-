@@ -21,7 +21,7 @@ That's just the background and what NMR is gonna be used for. There's a lot of s
 Script will aim to NMR spectra into metabolitic markers in a stepwise process:
 
 1. Inputs FID and processes it into a readable 2D spectra
-     - what we want to replicate in the script are the commands that I usually imput in the software. First I apply window functions, changing them to EM and Sine. Then I apply xfb, which is the fourier transform. Then I apply abs1 and abs2, which is the phase correction. [The confusing part is if there are other signal processing commands that are applied that are not explicitly stated in the program or done by me]
+     - what we want to replicate in the script are the commands that I usually imput in the software. First I apply window functions, changing them to Sine and Sine. Then I apply xfb, which is the fourier transform. Then I apply abs1 and abs2, which is the phase correction. [The confusing part is if there are other signal processing commands that are applied that are not explicitly stated in the program or done by me]
        
 2. Reads 2D spectra and takes intervals based on where a peak for a molecule is creating the most noise
    - can't lie, I have no idea how this would be created. The confusing part is that every molecule has a different looking peak, and so I'm not sure if this would turn into a ML project that can dictate which parts are noise and which parts are actual molecules. Perhaps this would simply be dictated by giving a lower limit of height- anything above that height would most likely be a notable peak.
